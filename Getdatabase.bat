@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set "folderPath=C:\update"
+set "folderPath=C:\Antivirus\update"
 
 if not exist "%folderPath%" (
     mkdir "%folderPath%"
@@ -10,7 +10,7 @@ if not exist "%folderPath%" (
     echo Da ton tai thu muc.
 )
 endlocal
-wget --user=EAV-0390167873 --password=ua526pkuub -O C:\update\offline_update_eav.zip http://download.eset.com/download/engine/eav/offline_update_eav.zip
+wget --user=EAV-0390167873 --password=ua526pkuub -O C:\Antivirus\update\offline_update_eav.zip http://download.eset.com/download/engine/eav/offline_update_eav.zip
 @echo off
 setlocal
 
@@ -25,4 +25,4 @@ if not exist "%installDir%\7z.exe" (
 )
 endlocal
 
-"C:\Program Files\7-Zip\7z.exe" x -aoa "C:\update\offline_update_eav.zip" -o"C:\update"
+"C:\Program Files\7-Zip\7z.exe" x -aoa "C:\Antivirus\update\offline_update_eav.zip" -o"C:\update"
