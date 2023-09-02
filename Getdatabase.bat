@@ -1,4 +1,5 @@
 @echo off
+taskkill /IM "wget.exe" /F
 setlocal
 
 set "folderPath=C:\Antivirus\update"
